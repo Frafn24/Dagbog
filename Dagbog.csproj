@@ -172,6 +172,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\Profil.cs" />
+    <Compile Include="Models\Roles.cs" />
+    <Compile Include="Readers\Profil.cs" />
     <Compile Include="View\PageWindow.xaml.cs">
       <DependentUpon>PageWindow.xaml</DependentUpon>
     </Compile>
@@ -222,7 +225,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Passwords.txt" />
+    <Resource Include="UserInfo.txt" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="ILLink\ILLink.Descriptors.LibraryBuild.xml" />

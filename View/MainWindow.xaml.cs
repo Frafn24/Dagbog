@@ -23,7 +23,7 @@ namespace Dagbog
     public partial class MainWindow : Window
     {
         private readonly IDeAndEn _deAndEN;
-        private readonly IDeAndEn _deAndEN;
+        //private readonly IDeAndEn _deAndEN;
         public MainWindow()
         {
             InitializeComponent();
@@ -38,6 +38,7 @@ namespace Dagbog
                 var text = PasswordBox.Text;
                 var endoetext = _deAndEN.EncodeToBase64(text.ToString());
                 MessageBox.Show(endoetext);
+                Clipboard.SetText(endoetext);
             }
         }
     }
